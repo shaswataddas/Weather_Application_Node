@@ -176,7 +176,7 @@
             var todayMonth = allMonths[currentTimeObj.getMonth()+1];
             var todayYear = currentTimeObj.getFullYear();
 
-            var currentHour =  24;
+            var currentHour =  currentTimeObj.getHours();
             var currentMinute = currentTimeObj.getMinutes();
 
             if(currentHour<5 || currentHour>20){
