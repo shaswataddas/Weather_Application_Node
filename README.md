@@ -25,6 +25,5 @@ And fs package is use to read the data from the response and parse it.
 
 ## Overview
 ### During DayTime
-![DayTime]([https://myoctocat.com/assets/images/base-octocat.svg](https://drive.google.com/drive/folders/1uBwls_XH7VuxU3ImmJjRrX9wlMYrINy-)](https://drive.google.com/file/d/1la8bTCJ-HmgTwcd-pQ5w3nk5_x5tA5uK/view?usp=drive_link))
+<img width="1440" alt="Screenshot 2023-07-08 at 12 25 11 AM" src="https://drive.google.com/file/d/1M0sLCyVbstaT01Tw23zbredAyKd7P-er/view?usp=drive_link">
 ### During NightTime
-![NightTime]([[https://myoctocat.com/assets/images/base-octocat.svg](https://drive.google.com/drive/folders/1uBwls_XH7VuxU3ImmJjRrX9wlMYrINy-)https://drive.google.com/drive/folders/1uBwls_XH7VuxU3ImmJjRrX9wlMYrINy-](https://drive.google.com/file/d/1M0sLCyVbstaT01Tw23zbredAyKd7P-er/view?usp=drive_link)https://drive.google.com/file/d/1M0sLCyVbstaT01Tw23zbredAyKd7P-er/view?usp=drive_link)
