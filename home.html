@@ -176,7 +176,7 @@
             var todayMonth = allMonths[currentTimeObj.getMonth()+1];
             var todayYear = currentTimeObj.getFullYear();
 
-            var currentHour =  currentTimeObj.getHours();
+            var currentHour =  24;
             var currentMinute = currentTimeObj.getMinutes();
 
             if(currentHour<5 || currentHour>20){
@@ -195,7 +195,7 @@
 
             console.log(currentHour%12, currentMinute,dayNightIndicator);
 
-            var returnValue = `${todayMonth} ${todayDate} | ${currentHour}:${currentMinute} ${dayNightIndicator}`;
+            var returnValue = `${todayMonth} ${todayDate} | ${currentHour%12}:${currentMinute} ${dayNightIndicator}`;
             return returnValue;
         }
         currentDate.innerHTML = getCurrentDay() + " | "+getCurrentDateTime();
