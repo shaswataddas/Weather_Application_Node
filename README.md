@@ -25,5 +25,6 @@ And fs package is use to read the data from the response and parse it.
 
 ## Overview
 ### During DayTime
-<img width="1440" alt="Screenshot 2023-07-08 at 12 25 11 AM" src="https://drive.google.com/file/d/1M0sLCyVbstaT01Tw23zbredAyKd7P-er/view?usp=drive_link">
+<img src="https://drive.google.com/file/d/1M0sLCyVbstaT01Tw23zbredAyKd7P-er/view?usp=drive_link"/>
 ### During NightTime
+<img src="[https://drive.google.com/file/d/1M0sLCyVbstaT01Tw23zbredAyKd7P-er/view?usp=drive_link](https://drive.google.com/file/d/1la8bTCJ-HmgTwcd-pQ5w3nk5_x5tA5uK/view?usp=drive_link)https://drive.google.com/file/d/1la8bTCJ-HmgTwcd-pQ5w3nk5_x5tA5uK/view?usp=drive_link"/>
