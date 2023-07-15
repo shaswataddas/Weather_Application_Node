@@ -25,6 +25,6 @@ And fs package is use to read the data from the response and parse it.
 
 ## Overview
 ### During DayTime
-![DayTime]([https://myoctocat.com/assets/images/base-octocat.svg](https://drive.google.com/drive/folders/1uBwls_XH7VuxU3ImmJjRrX9wlMYrINy-))
+![DayTime]([https://myoctocat.com/assets/images/base-octocat.svg](https://drive.google.com/drive/folders/1uBwls_XH7VuxU3ImmJjRrX9wlMYrINy-)](https://drive.google.com/file/d/1la8bTCJ-HmgTwcd-pQ5w3nk5_x5tA5uK/view?usp=drive_link))
 ### During NightTime
-![DayTime]([https://myoctocat.com/assets/images/base-octocat.svg](https://drive.google.com/drive/folders/1uBwls_XH7VuxU3ImmJjRrX9wlMYrINy-)https://drive.google.com/drive/folders/1uBwls_XH7VuxU3ImmJjRrX9wlMYrINy-)
+![NightTime]([[https://myoctocat.com/assets/images/base-octocat.svg](https://drive.google.com/drive/folders/1uBwls_XH7VuxU3ImmJjRrX9wlMYrINy-)https://drive.google.com/drive/folders/1uBwls_XH7VuxU3ImmJjRrX9wlMYrINy-](https://drive.google.com/file/d/1M0sLCyVbstaT01Tw23zbredAyKd7P-er/view?usp=drive_link)https://drive.google.com/file/d/1M0sLCyVbstaT01Tw23zbredAyKd7P-er/view?usp=drive_link)
