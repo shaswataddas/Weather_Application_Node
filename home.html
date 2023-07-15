@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather Application</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* font-family: "Jost", sans-serif; */
+            font-family: "Quicksand", sans-serif;
+        }
+        
+        body {
+            background: #f3f2ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        html,
+        body {
+            font-size: 62.5%;
+            height: 100%;
+        }
+        
+        html {
+            background: #eee;
+        }
+        
+        .box {
+            width: 20vw;
+            height: 60vh;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+            min-width: 20rem;
+            min-height: 35rem;
+        }
+        
+        .box:after {
+            content: "";
+            display: block;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 11;
+            transform: translate3d(0, 0, 0);
+        }
+        
+        
+        .info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            height: 45%;
+            z-index: 4;
+        }
+        
+        .location {
+            margin-top: 1.5rem;
+            text-align: center;
+            font-weight: 400;
+            font-size: 3rem;
+            color: #eee;
+        }
+        
+        #date {
+            text-align: center;
+            margin-top: 0.5rem;
+            color: #babcbf;
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        
+        .temp {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 3rem;
+            color: #eee;
+        }
+        
+        #tempmin_max {
+            text-align: center;
+            margin-top: 0.3rem;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: #babcbf;
+        }
+        
+        
+        @media (max-width: 600px) {
+            .box {
+                width: 90vw;
+                height: 80vh;
+            }
+        
+            .wave {
+                top: 85%;
+            }
+        
+            #weathercon {
+                font-size: 5em;
+            }
+        
+            .info {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-height: 500px) {
+            .box {
+                height: 80vh;
+            }
+        
+            .wave {
+                top: 115%;
+            }
+        }
+        
+        body>span {
+            width: 100vw;
+            text-align: center;
+            color: grey;
+        }
+        
+        img{
+            max-height:100%; 
+            max-width:200%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="info">
+            <h2 class="location">{%locationCity%}, {%locationCountry%}</h2>
+            <p id="date">WED | JUL 09 | 01:06PM</p>
+            <h1 class="temp">{%currentTemp%}°C</h1>
+            <h3 id="tempmin_max">Min {minTemp}°C | Max {maxTemp}°C</h3>
+        </div>
+        <img src="https://cdn.dribbble.com/users/780072/screenshots/2227157/attachments/414102/Blood.png" alt="DayTime" id="bgImage">
+    </div>
+
+    <script>
+        const currentDate = document.getElementById('date');
+        const getCurrentDay = () => {
+            var weekday = new Array(7);
+            weekday[0] = "SUN";
+            weekday[1] = "MON";
+            weekday[2] = "TUE";
+            weekday[3] = "WED";
+            weekday[4] = "THR";
+            weekday[5] = "FRI";
+            weekday[6] = "SAT";
+            var currentTimeObj = new Date();
+            return weekday[currentTimeObj.getDay()];
+        }
+        const getCurrentDateTime = () => {
+            var allMonths = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+            var currentTimeObj = new Date();
+            var todayDate = currentTimeObj.getDate();
+            var todayMonth = allMonths[currentTimeObj.getMonth()+1];
+            var todayYear = currentTimeObj.getFullYear();
+
+            var currentHour =  currentTimeObj.getHours();
+            var currentMinute = currentTimeObj.getMinutes();
+
+            if(currentHour<5 || currentHour>20){
+                document.getElementById("bgImage").src = "https://cdn.dribbble.com/users/780072/screenshots/2227157/attachments/414102/Blood.png";
+            }else{
+                document.getElementById("bgImage").src = "https://cdn.dribbble.com/users/780072/screenshots/2227157/attachments/414100/Moon.png";
+                document.getElementById("tempmin_max").style.color = "#1d2838";
+                document.getElementById("date").style.color = "#1d2838";
+            }
+
+            var dayNightIndicator;
+            if(currentHour<12)
+                dayNightIndicator = 'AM';
+            else
+                dayNightIndicator = 'PM';
+
+            console.log(currentHour%12, currentMinute,dayNightIndicator);
+
+            var returnValue = `${todayMonth} ${todayDate} | ${currentHour}:${currentMinute} ${dayNightIndicator}`;
+            return returnValue;
+        }
+        currentDate.innerHTML = getCurrentDay() + " | "+getCurrentDateTime();
+    </script>
+
+</body>
+</html>
