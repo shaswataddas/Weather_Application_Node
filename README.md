@@ -28,4 +28,4 @@ And fs package is use to read the data from the response and parse it.
 <img src="https://github.com/shaswataddas/Weather_Application_Node/blob/main/Screenshot%202023-07-15%20at%2012.17.32%20PM.png"/>
 
 ### During NightTime
-<img src="https://drive.google.com/file/d/1la8bTCJ-HmgTwcd-pQ5w3nk5_x5tA5uK/view?usp=drive_link"/>
+<img src="https://github.com/shaswataddas/Weather_Application_Node/blob/main/Screenshot%202023-07-15%20at%2012.17.57%20PM.png?width=50%&height=50%"/>
